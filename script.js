@@ -18,4 +18,9 @@ function handleClick(e) {
     // Switch Turns
 }
 
-function placeMark (cell, c)
+// This can be deleted
+
+function placeMark (cell, c) 
+{
+
+}
