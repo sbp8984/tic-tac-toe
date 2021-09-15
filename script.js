@@ -17,13 +17,17 @@ const restartButton = document.getElementById('restartButton')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
+//initialize the start game function
 startGame()
 
+//  listen for a restart button, if so, begin start game
 restartButton.addEventListener('click', startGame)
 
+
+//start game function
 function startGame() {
-  circleTurn = false
-  cellElements.forEach(cell => {
+  circleTurn = false ///X begins first
+  cellElements.forEach(cell => { 
     cell.classList.remove(X_CLASS)
     cell.classList.remove(CIRCLE_CLASS)
     cell.removeEventListener('click', handleClick)
